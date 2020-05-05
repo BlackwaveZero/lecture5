@@ -25,7 +25,7 @@ def triangle(expr):
         elif tmp==135 or tmp==315:
             num='-1.0'
         else:
-            num=math.tan(math.radians(int(expr[expr.find('(')+1:len(expr)-1])))
+            num=math.tan(math.radians(num))
     elif ('cot' in expr):
         num=int(expr[expr.find('(')+1:len(expr)-1])
         tmp=num%360
@@ -38,7 +38,7 @@ def triangle(expr):
         elif tmp==135 or tmp==315:
             num='-1.0'
         else:
-            num=1/math.tan(math.radians(int(expr[expr.find('(')+1:len(expr)-1])))
+            num=1/math.tan(math.radians(num))
     else:
         num="invalid function"
     return num
