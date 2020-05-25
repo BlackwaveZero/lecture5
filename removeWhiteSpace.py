@@ -25,5 +25,3 @@ def removeWhiteSpaces(text):
 data=input()
 if(len(data))!=0:
     print(removeWhiteSpaces(data))
-# def run(text):
-#     return [removeWhiteSpaces(text)]
